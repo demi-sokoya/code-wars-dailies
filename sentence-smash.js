@@ -13,8 +13,10 @@ for each word in words {
     finally call the function giving it an array of words
 */
 
-var sentence = "";
+
 function smash(words) {
+    //Moved sentence declaration within the function as sentence was not getting reset causing the test to fail
+    var sentence = "";
     //For each word in words
     for(let i = 0; i < words.length; i++) {
         sentence = sentence + " " + words[i]
