@@ -26,5 +26,9 @@ function smash(words) {
     return result;
 
 }
+//After looking through submissions once i had submitted mine I learnt about the join() function.
+function smash(words) {
+    return words.join(' ')
+}
 
 console.log(smash(["A", "very", "short", "sentence."]))
