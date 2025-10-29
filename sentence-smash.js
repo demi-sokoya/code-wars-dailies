@@ -13,12 +13,11 @@ for each word in words {
     finally call the function giving it an array of words
 */
 
-var sentence;
+var sentence = "";
 function smash(words) {
     //For each word in words
-    for(let i = 0; i <= words.length; i++) {
+    for(let i = 0; i < words.length; i++) {
         sentence = sentence + " " + words[i]
-        return sentence;
     }
 
     var result = sentence.substring(1, sentence.length);
