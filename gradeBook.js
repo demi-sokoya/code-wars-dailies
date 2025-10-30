@@ -4,23 +4,23 @@ function getGrade(s1, s2, s3) {
 
     switch (true) {
         case (average >= 90):
-            console.log("A")
+            return 'A'
             break;
 
         case (average >= 80):
-            console.log("B")
+            return 'B'
             break;
 
         case (average >= 70):
-            console.log("C")
+            return 'C'
             break;
 
         case (average >= 60):
-            console.log("D")
+            return 'D'
             break;
 
         default:
-            console.log("F")
+            return 'F'
             break;
     }
 }
