@@ -2,7 +2,7 @@
 function getGrade(s1, s2, s3) {
     var average = (s1 + s2 + s3) / 3
 
-    switch (average) {
+    switch (true) {
         case (average >= 90):
             console.log("A")
             break;
@@ -24,3 +24,5 @@ function getGrade(s1, s2, s3) {
             break;
     }
 }
+
+getGrade( 0, 90, 90)
