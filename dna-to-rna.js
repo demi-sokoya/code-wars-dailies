@@ -8,6 +8,26 @@
 Create a function that takes in a string called dna
 Use the replace method to replace all instances of 'T' with 'U'
 Return the new string
+
+Option 1: Using the js string.replace() method
+
+FUNCTION DNAtoRNA(dna) 
+    RETURN REPLACE 'T' WITH 'U'
+
+
+Option 2: Using a for loop and an if statement:
+
+FUNCTION DNAtoRNA(dna) 
+    SET rna TO ""
+    FOR EACH character IN dna 
+        IF character = 'T' THEN 
+            SET rna = rna + 'U'
+        ELSE 
+            SET rna = rna + character
+        ENDIF
+    END FOR
+    RETURN rna
+END FUNCTION
 */
 
 
