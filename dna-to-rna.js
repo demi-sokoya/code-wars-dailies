@@ -30,4 +30,11 @@ FUNCTION DNAtoRNA(dna)
 END FUNCTION
 */
 
+//Solution 1
+
+function DNAtoRNA (dna) {
+    return dna.replace('T','U')
+}
+
+console.log(DNAtoRNA("GCAT"))
 
