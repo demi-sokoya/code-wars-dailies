@@ -33,7 +33,7 @@ END FUNCTION
 //Solution 1
 
 // function DNAtoRNA (dna) {
-//     return dna.replace('T','U')
+//     return dna.replace(/T/g,'U') or return dna.replaceAll('T','U');
 // }
 
 // console.log(DNAtoRNA("GCAT"))
