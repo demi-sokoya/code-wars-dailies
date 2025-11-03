@@ -18,7 +18,7 @@ FUNCTION DNAtoRNA(dna)
 Option 2: Using a for loop and an if statement:
 
 FUNCTION DNAtoRNA(dna) 
-    SET rna TO ""
+    INIT rna TO ""
     FOR EACH character IN dna 
         IF character = 'T' THEN 
             SET rna = rna + 'U'
@@ -32,9 +32,25 @@ END FUNCTION
 
 //Solution 1
 
-function DNAtoRNA (dna) {
-    return dna.replace('T','U')
+// function DNAtoRNA (dna) {
+//     return dna.replace('T','U')
+// }
+
+// console.log(DNAtoRNA("GCAT"))
+
+//Solution 2
+
+function DNAtoRNA(dna) {
+    var rna = ""
+    for (let i = 0; i < dna.length; i++){
+        //Use == instead of == as this will change all chars to U
+        if (dna[i] == 'T') {
+            rna += 'U';
+        } else {
+            rna += dna[i];
+        }
+    }
+    return rna;
 }
 
 console.log(DNAtoRNA("GCAT"))
-
