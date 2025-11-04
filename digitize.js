@@ -29,6 +29,9 @@ function digitize(n) {
         return []
     }
 
+    if (n === 0) {
+        return [0]
+    }
 
     let digits = []
     while (n > 0) { 
