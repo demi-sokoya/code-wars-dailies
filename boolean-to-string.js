@@ -12,10 +12,9 @@ END FUNCTION
 function boolToWord(bool) {
     if (typeof bool !== 'boolean') {
         return "Please use a boolean value(true or false)"
-    } else if(bool === true) {
-        return "Yes"
-    } else {
-        return "No"
-    }
+    } 
+
+    return bool ? "Yes" : "No"
+    
 }
-console.log(boolToWord(null))
+console.log(boolToWord(true))
