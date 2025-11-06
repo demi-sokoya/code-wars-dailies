@@ -16,13 +16,13 @@ for each word in words {
 
 function smash(words) {
     //Moved sentence declaration within the function as sentence was not getting reset causing the test to fail
-    var sentence = "";
+    let sentence = "";
     //For each word in words
     for(let i = 0; i < words.length; i++) {
         sentence = sentence + " " + words[i]
     }
 
-    var result = sentence.substring(1, sentence.length);
+    let result = sentence.substring(1, sentence.length);
     return result;
 
 }
