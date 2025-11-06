@@ -41,7 +41,7 @@ END FUNCTION
 //Solution 2
 
 function DNAtoRNA(dna) {
-    var rna = ""
+    let rna = ""
     for (let i = 0; i < dna.length; i++){
         //Use == instead of == as this will change all chars to U
         if (dna[i] == 'T') {
