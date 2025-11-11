@@ -9,3 +9,13 @@
 //     ENDIF
 //     RETURN SUBSTRING of str FROM position 1 TO position LENGTH(str) - 2
 // END FUNCTION
+
+function removeChar(str) {
+  if (str.length <= 2) {
+    return "";
+  }
+
+  return str.slice(1, str.length - 1);
+}
+
+console.log(removeChar("Charger"));
