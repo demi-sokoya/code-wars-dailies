@@ -7,3 +7,9 @@ FUNCTION removeExclamationMarks(s)
     RETURN s with all "!" REPLACED by ""
 END FUNCTION
 */
+
+function removeExclamationMarks(s) {
+  return s.replace(/!/g, "");
+}
+
+console.log(removeExclamationMarks("Hello! World!!!!!!!!!!!!!!!!!"));
