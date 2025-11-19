@@ -33,7 +33,7 @@ function getMultiplesOfThreeAndFive(number) {
   if (number < 0) {
     return 0;
   }
-
+  //Checking for divisibility and adding to the array
   for (i = number; i > 0; i--) {
     if (i % 3 === 0 && i % 5 === 0) {
       array.push(i);
@@ -44,7 +44,14 @@ function getMultiplesOfThreeAndFive(number) {
     }
   }
 
-  return array;
+  //Sum up all values in the array using reduce
+
+  let sum = array.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0
+  );
+  console.log(array);
+  return sum;
 }
 
-console.log(getMultiplesOfThreeAndFive(100));
+console.log(getMultiplesOfThreeAndFive(10));
