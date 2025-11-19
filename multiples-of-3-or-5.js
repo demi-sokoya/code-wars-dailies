@@ -34,7 +34,7 @@ function getMultiplesOfThreeAndFive(number) {
     return 0;
   }
   //Checking for divisibility and adding to the array
-  for (i = number; i > 0; i--) {
+  for (i = number - 1; i > 0; i--) {
     if (i % 3 === 0 && i % 5 === 0) {
       array.push(i);
     } else if (i % 5 === 0) {
