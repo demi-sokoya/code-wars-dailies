@@ -26,3 +26,25 @@
  *      RETURN array
  * END FUNCTION
  */
+
+function getMultiplesOfThreeAndFive(number) {
+  let array = [];
+
+  if (number < 0) {
+    return 0;
+  }
+
+  for (i = number; i > 0; i--) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      array.push(i);
+    } else if (i % 5 === 0) {
+      array.push(i);
+    } else if (i % 3 === 0) {
+      array.push(i);
+    }
+  }
+
+  return array;
+}
+
+console.log(getMultiplesOfThreeAndFive(100));
